@@ -1,0 +1,19 @@
+{
+  "name": "timev2",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "timev2",
+  "icons": {
+    "192": "img/icons/icon-chrome-192x192.png"
+  },
+  "browser_action": {
+    "default_title": "timev2",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "https://*.timev2.de/",
+    "unlimitedStorage"
+  ]
+}
