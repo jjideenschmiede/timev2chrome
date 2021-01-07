@@ -87,22 +87,6 @@ window.addEventListener("load", () => {
             }
         }
     })
-
-    // Add animation to edit button
-    document.querySelector("#edit").addEventListener("mouseover", () => {
-
-        // Change css classes
-        document.querySelector("#edit").classList.add("animate__animated", "animate__heartBeat")
-
-        // Change back
-        setTimeout(() => {
-
-            // Change css classes
-            document.querySelector("#edit").classList.remove("animate__animated", "animate__heartBeat")
-
-        }, 1000)
-
-    })
   
     // Open settings
     document.querySelector("#edit").addEventListener("click", () => {
