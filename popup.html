@@ -3,24 +3,22 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/animate.min.css">
         <link rel="stylesheet" href="css/style.min.css">
     </head>
-    <body class="container p-5">
+    <body class="container p-5 animate__animated animate__fadeIn">
         <div class="row d-flex justify-content-center">
-            <div class="col-6 pb-4">
+            <div class="col-6 pb-3">
                 <figure>
                     <img src="img/logo.svg" alt="timev2" class="img-fluid">
                 </figure>
             </div>
         </div>
         <div id="form" class="row">
-            <div id="error" class="col-md-12 d-none">
-                <p>Error</p>
-            </div>
             <div class="col-md-12">
                 <input type="time" name="time" id="time" class="form-control rounded-0  border-0 text-center" value="00:00">
             </div>
-            <div class="col-md-12 pt-4">
+            <div class="col-md-12 pt-2">
                 <select name="client" id="clients" class="form-control rounded-0 border-0">
                     <option selected disabled hidden>Bitte einen Kunden auswählen</option>
                 </select>
@@ -31,7 +29,19 @@
                 </select>
             </div>
             <div class="col-md-12 pt-4">
-                <textarea name="description" id="description" class="form-control rounded-0  border-0" cols="30" rows="10"></textarea>
+                <textarea name="description" id="description" class="form-control rounded-0  border-0" cols="30" rows="10" placeholder="Bitte die Tätigkeit beschreiben..."></textarea>
+            </div>
+            <div id="errorfill" class="col-md-12 bg-dark text-white py-2 px-3 mt-3 mx-3 d-none animate__animated animate__fadeIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle-fill mr-2" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                </svg>
+                <small>Es wurden nicht alle benötigten Felder ausgefüllt.</small>
+            </div>
+            <div id="errorsend" class="col-md-12 bg-dark text-white py-2 px-3 mt-3 mx-3 d-none animate__animated animate__fadeIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle-fill mr-2" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                </svg>
+                <small>Beim speichern ist ein Fehler aufgetreten.</small>
             </div>
             <div class="col-md-12 d-flex justify-content-between pt-4">
                 <button id="send" class="btn btn-light rounded-0">Speichern</button>
@@ -43,7 +53,7 @@
             </div>
         </div>
         <div class="row">
-            <div id="settings" class="col-md-12 bg-light p-4 d-none">
+            <div id="settings" class="col-md-12 bg-light p-4 d-none animate__animated animate__fadeInUp">
                 <h2>Einstellungen</h2>
                 <p>Bitte tragen Sie hier die folgenden Informationen zu ihrerer timvev2 Installation ein. Wenn Sie weitere Fragen oder Anmerkungen haben melden Sie sich gerne unter <a href="mailto:info@timev2.de" title="info@timev2.de" class="text-danger">info@timev2.de</a>.</p>
                 <div class="row pt-2">
@@ -51,7 +61,7 @@
                         <label for="domainkey">Domainkey:</label>
                         <input type="text" name="domainkey" id="domainkey" class="form-control rounded-0">
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 pt-3">
                         <label for="token">Token:</label>
                         <input type="text" name="token" id="token" class="form-control rounded-0">
                     </div>
