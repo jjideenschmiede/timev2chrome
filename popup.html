@@ -6,15 +6,15 @@
         <link rel="stylesheet" href="css/animate.min.css">
         <link rel="stylesheet" href="css/style.min.css">
     </head>
-    <body class="container p-5 animate__animated animate__fadeIn">
-        <div class="row d-flex justify-content-center">
-            <div class="col-6 pb-3">
+    <body class="container animate__animated animate__fadeIn">
+        <header class="row bg-black d-flex justify-content-center py-4">
+            <div class="col-4 pt-2">
                 <figure>
                     <img src="img/logo.svg" alt="timev2" class="img-fluid">
                 </figure>
             </div>
-        </div>
-        <div id="form" class="row">
+        </header>
+        <div id="form" class="row pt-4 pb-5 px-5">
             <div class="col-md-12">
                 <input type="time" name="time" id="time" class="form-control rounded-0  border-0 text-center" value="00:00">
             </div>
@@ -31,13 +31,13 @@
             <div class="col-md-12 pt-4">
                 <textarea name="description" id="description" class="form-control rounded-0  border-0" cols="30" rows="10" placeholder="Bitte die Tätigkeit beschreiben..."></textarea>
             </div>
-            <div id="errorfill" class="col-md-12 bg-dark text-white py-2 px-3 mt-3 mx-3 d-none animate__animated animate__fadeIn">
+            <div id="errorfill" class="col-md-12 bg-black text-white py-2 px-3 mt-3 mx-3 d-none animate__animated animate__fadeIn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle-fill mr-2" viewBox="0 0 16 16">
                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
                 </svg>
                 <small>Es wurden nicht alle benötigten Felder ausgefüllt.</small>
             </div>
-            <div id="errorsend" class="col-md-12 bg-dark text-white py-2 px-3 mt-3 mx-3 d-none animate__animated animate__fadeIn">
+            <div id="errorsend" class="col-md-12 bg-black text-white py-2 px-3 mt-3 mx-3 d-none animate__animated animate__fadeIn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle-fill mr-2" viewBox="0 0 16 16">
                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
                 </svg>
@@ -52,8 +52,8 @@
                 </button>
             </div>
         </div>
-        <div class="row">
-            <div id="settings" class="col-md-12 bg-light p-4 d-none animate__animated animate__fadeInUp">
+        <div id="settings" class="row d-none animate__animated animate__fadeInUp">
+            <div class="col-md-12 bg-light p-4">
                 <h2>Einstellungen</h2>
                 <p>Bitte tragen Sie hier die folgenden Informationen zu ihrerer timvev2 Installation ein. Wenn Sie weitere Fragen oder Anmerkungen haben melden Sie sich gerne unter <a href="mailto:info@timev2.de" title="info@timev2.de" class="text-danger">info@timev2.de</a>.</p>
                 <div class="row pt-2">
@@ -68,14 +68,14 @@
                 </div>
                 <div class="row mt-4">
                     <div class="col-md-12 d-flex justify-content-between">
-                        <button id="cancel" class="btn btn-dark rounded-0">Abbrechen</button>
+                        <button id="cancel" class="btn btn-black rounded-0">Abbrechen</button>
                         <button id="save" class="btn btn-danger rounded-0">Speichern</button>
                     </div>
                 </div>
             </div>
         </div>
     </body>
-    <footer>
+    <footer class="d-none">
         <script src="js/main.js"></script>
     </footer>
 </html>
