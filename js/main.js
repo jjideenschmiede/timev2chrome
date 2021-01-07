@@ -101,9 +101,14 @@ window.addEventListener("load", () => {
     document.querySelector("#cancel").addEventListener("click", () => {
 
         // Change css classes
-        document.querySelector("#form").classList.toggle("d-none")
-        document.querySelector("#form").classList.add("animate__animated", "animate__fadeIn")
-        document.querySelector("#settings").classList.toggle("d-none")
+        document.querySelector("#settings").classList.add("animate__fadeOutDown")
+
+        setTimeout(() => {
+            document.querySelector("#form").classList.toggle("d-none")
+            document.querySelector("#form").classList.add("animate__animated", "animate__fadeIn")
+            document.querySelector("#settings").classList.toggle("d-none")
+            document.querySelector("#settings").classList.remove("animate__fadeOutDown")
+        }, 800)
 
     })
 

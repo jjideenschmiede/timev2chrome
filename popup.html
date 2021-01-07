@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="css/style.min.css">
     </head>
     <body class="container animate__animated animate__fadeIn">
-        <header class="row bg-black d-flex justify-content-center py-4">
+        <header class="row d-flex justify-content-center py-4">
             <div class="col-4 pt-2">
                 <figure>
                     <img src="img/logo.svg" alt="timev2" class="img-fluid">
@@ -16,20 +16,20 @@
         </header>
         <div id="form" class="row pt-4 pb-5 px-5">
             <div class="col-md-12">
-                <input type="time" name="time" id="time" class="form-control rounded-0  border-0 text-center" value="00:00">
+                <input type="time" name="time" id="time" class="form-control rounded-0 border-0 text-center" value="00:00">
             </div>
             <div class="col-md-12 pt-2">
-                <select name="client" id="clients" class="form-control rounded-0 border-0">
+                <select name="client" id="clients" class="form-control rounded-0">
                     <option selected disabled hidden>Bitte einen Kunden auswählen</option>
                 </select>
             </div>
             <div class="col-md-12 pt-4">
-                <select name="project" id="projects" class="form-control rounded-0  border-0">
+                <select name="project" id="projects" class="form-control rounded-0">
                     <option selected disabled hidden>Bitte ein Projekt auswählen</option>
                 </select>
             </div>
             <div class="col-md-12 pt-4">
-                <textarea name="description" id="description" class="form-control rounded-0  border-0" cols="30" rows="10" placeholder="Bitte die Tätigkeit beschreiben..."></textarea>
+                <textarea name="description" id="description" class="form-control rounded-0" cols="30" rows="10" placeholder="Bitte die Tätigkeit beschreiben..."></textarea>
             </div>
             <div id="errorfill" class="col-md-12 bg-black text-white py-2 px-3 mt-3 mx-3 d-none animate__animated animate__fadeIn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle-fill mr-2" viewBox="0 0 16 16">
@@ -44,8 +44,8 @@
                 <small>Beim speichern ist ein Fehler aufgetreten.</small>
             </div>
             <div class="col-md-12 d-flex justify-content-between pt-4">
-                <button id="send" class="btn btn-light rounded-0">Speichern</button>
-                <button id="edit" class="btn text-white settings">
+                <button id="send" class="btn btn-red rounded-0">Speichern</button>
+                <button id="edit" class="btn text-black settings">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
                         <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
                     </svg>
@@ -54,7 +54,7 @@
         </div>
         <div id="settings" class="row d-none animate__animated animate__fadeInUp">
             <div class="col-md-12 bg-light p-4">
-                <h2>Einstellungen</h2>
+                <h2 class="pt-2">Einstellungen</h2>
                 <p>Bitte tragen Sie hier die folgenden Informationen zu ihrerer timvev2 Installation ein. Wenn Sie weitere Fragen oder Anmerkungen haben melden Sie sich gerne unter <a href="mailto:info@timev2.de" title="info@timev2.de" class="text-danger">info@timev2.de</a>.</p>
                 <div class="row pt-2">
                     <div class="col-md-6">
@@ -76,6 +76,6 @@
         </div>
     </body>
     <footer class="d-none">
-        <script src="js/main.js"></script>
+        <script src="js/main.min.js"></script>
     </footer>
 </html>
