@@ -1,6 +1,6 @@
 {
   "name": "timev2",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "manifest_version": 2,
   "description": "timev2",
   "icons": {
@@ -12,8 +12,6 @@
   },
   "permissions": [
     "storage",
-    "tabs",
-    "https://*.timev2.de/",
-    "unlimitedStorage"
+    "https://*.timev2.de/"
   ]
 }
