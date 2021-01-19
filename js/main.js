@@ -24,7 +24,7 @@ window.addEventListener("load", () => {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",
-                    "authorization": document.querySelector("#token").value
+                    "auth": document.querySelector("#token").value
                 }
             })
                 .then(response => response.json())
@@ -42,7 +42,7 @@ window.addEventListener("load", () => {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",
-                    "authorization": document.querySelector("#token").value
+                    "authentication": document.querySelector("#token").value
                 }
             })
                 .then(response => response.json())
